@@ -1,0 +1,81 @@
+
+body{
+    margin:0; 
+    font-family: 'Times New Roman', serif;
+  }
+
+.cv{
+    display: flex;
+}
+.left-side>div{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70% ;
+}
+img{
+    width:inherit;
+    border-radius: 300px;
+    box-shadow: 2px 3px 2px 1px rgb(44, 1, 1);
+}
+ h4{
+    margin-bottom: -10px;
+}
+.left-side{
+    background-color: hsl(0, 87%, 37%);
+    width:25%;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side{
+display:flex ;
+flex-direction: column;
+width: 75%;
+background-color:#d6d6d6;
+}
+.right-side > div{
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60% ;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 8px #888888;
+}
+.about-me{
+    margin-top: 50px;
+}
+.right-side > div> h2{
+    color: hsl(0, 87%, 37%);
+    margin-left: 20px;
+    
+}
+.right-side > div> p{
+    margin-left: 30px;
+    margin-right:15px;
+    line-height:32px;
+    
+
+}
+hr{
+    height: 2px;
+    color:#062669;
+    background-color:hsl(0, 87%, 37%);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 55, 55);
+}
+
+
+.contact > ul, .about-hyf> ul {
+    list-style-type: none;
+}
+li,p{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
