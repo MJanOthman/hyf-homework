@@ -66,10 +66,15 @@ hr{
     background-color:hsl(0, 87%, 37%);
 }
 
-a{
+p >a{
     text-decoration: none;
     color: rgb(133, 55, 55);
 }
+li>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 
 
 .contact > ul, .about-hyf> ul {
