@@ -65,7 +65,10 @@ hr{
     color:#062669;
     background-color:hsl(0, 87%, 37%);
 }
-
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 p >a{
     text-decoration: none;
     color: rgb(133, 55, 55);
