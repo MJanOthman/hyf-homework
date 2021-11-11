@@ -10,10 +10,7 @@ body{
 .cv{
     display: flex;
 }
-@media (max-width: 800px) {
-  .cv {
-    flex-direction: column;
-  }
+
 img{
     width:inherit;
     border-radius: 300px;
@@ -88,4 +85,17 @@ li>a{
 li,p{
     margin-bottom: 15px;
     font-size: 20px;
+}
+@media (max-width: 800px) {
+  .cv {
+    flex-direction: column;
+  }
+    .right-side{
+display:flex ;
+flex-direction: column;
+width:100%;
+background-color:#d6d6d6;
+}
+    .left-side{
+    width:100%; }
 }
