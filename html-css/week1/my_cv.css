@@ -7,11 +7,7 @@ body{
 .cv{
     display: flex;
 }
-.left-side>div{
-    margin-left: 15%;
-    margin-right: 15%;
-    max-width: 70% ;
-}
+
 img{
     width:inherit;
     border-radius: 300px;
@@ -22,17 +18,22 @@ img{
 }
 .left-side{
     background-color: hsl(0, 87%, 37%);
-    width:30%;
+    max-width: 30%;
     color: antiquewhite;
     display: flex;
     flex-direction: column;
 }
 
 .right-side{
-    display:flex ;
-    flex-direction: column;
-    width:70%;
-    background-color:#d6d6d6;
+display:flex ;
+flex-direction: column;
+max-width: 70%;
+background-color:#d6d6d6;
+}
+.left-side>div{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70% ;
 }
 .right-side > div{
     padding: 10px;
