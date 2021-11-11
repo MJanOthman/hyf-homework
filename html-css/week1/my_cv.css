@@ -13,7 +13,7 @@ body{
     max-width: 70% ;
 }
 img{
-    width:inherit;
+    max-width:inherit;
     border-radius: 300px;
     box-shadow: 2px 3px 2px 1px rgb(44, 1, 1);
 }
@@ -31,7 +31,7 @@ img{
 .right-side{
 display:flex ;
 flex-direction: column;
-width: 75%;
+max-width:70%;
 background-color:#d6d6d6;
 }
 .right-side > div{
