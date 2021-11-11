@@ -2,9 +2,7 @@
 body{
     margin:0; 
     font-family: 'Times New Roman', serif;
-    @media screen(max-width: 700px;) {
-      
-    }
+   
   }
 
 .cv{
@@ -21,7 +19,7 @@ img{
 }
 .left-side{
     background-color: hsl(0, 87%, 37%);
-    max-width: 30%;
+    flex: 30%;
     color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -30,7 +28,7 @@ img{
 .right-side{
 display:flex ;
 flex-direction: column;
-max-width: 70%;
+flex: 70%;
 background-color:#d6d6d6;
 }
 .left-side>div{
@@ -86,16 +84,8 @@ li,p{
     margin-bottom: 15px;
     font-size: 20px;
 }
-@media (max-width: 800px) {
+@media and (max-width: 800px) {
   .cv {
     flex-direction: column;
   }
-    .right-side{
-display:flex ;
-flex-direction: column;
-width:100%;
-background-color:#d6d6d6;
-}
-    .left-side{
-    width:100%; }
 }
