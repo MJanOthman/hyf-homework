@@ -3,7 +3,7 @@ body{
     margin:0; 
     font-family: 'Times New Roman', serif;
     @media screen {
-        max-width: 500px;
+        max-width: 1500px;
         
     }
   }
