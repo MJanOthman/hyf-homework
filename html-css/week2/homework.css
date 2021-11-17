@@ -36,7 +36,9 @@ header p{
 .page-parts a{
     color: black;
     text-decoration: none;
-
+}
+#gray-link{
+    color: darkgray;
 }
 .main-topics{
     display: flex;
