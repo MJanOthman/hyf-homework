@@ -87,12 +87,17 @@ iframe{
     header{
         width: 100%;
     }
+    .page-title{
+        width:100%;
+        margin-right:10px;
+        margin-left:10px;
+     }
     .page-parts li{
         display:block;
         margin: 5px;
     }
     .main-image{
-        height: fit-content; 
+        height: 150px; 
     }
     .main-topics{
         display: flex;
