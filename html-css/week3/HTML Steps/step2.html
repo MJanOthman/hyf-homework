@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Your costum tailor</title>
+</head>
+<body>
+  <header>
+    <div class="const-header">
+        <img src="/Users/hyf/Desktop/images/jano logo.jpeg" alt="logo" class="logo-image">
+        <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <form action="/Users/hyf/Desktop/Hack Your Future/HTML and CSS/Week3/Homework week3/step3.html">
+      <h1>Sign up to yourcustomtailor.com</h1>
+      <h2>Step 2/4  - how can we reach you?</h2>
+      <p>Progress </p>
+      <button class="done">  </button> 
+      <button class="done">50%</button>
+      <button>  </button>
+      <button>  </button>
+      <p> We will probably need to stay in touch somehow. Let us know how we can reach you? </p>
+      <div class="contact-info">
+        <ul>
+             <li><label for="email">Email*</label>
+                <input type="email" name="Email" id="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" required></li>
+             <li><label for="phone">Phone</label>
+               <input type="tel" name="phone" id="phone" pattern="[1-9][0-9][0-9][0-9][0-9][0-9]" maxlength="6" required></li>
+        </ul>
+        <ul>
+               <li><label for="password">Password*</label>
+                <input type="password" name="password" id="password" minlength="10"  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number, at least 10 character" required></li>
+        </ul>
+        <ul>
+            <li><label for="re-password">Re-enter Password*</label>
+            <input type="password" name="re-password" id="re-password" minlength="10" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number, at least 10 character." required></li>
+        </ul>
+      </div>
+      <p>I want to sign up for the newsletter</p>
+      <div class="newsletter">
+        <ul>
+           <li><label for="weekly">Weekly news</label>
+               <input type="radio" name="news" id="weekly" required></li>
+            <li><label for="monthly">Monthly news</label>
+                <input type="radio" name="news" id="monthly" required></li>
+            <li><label for="reject">Don't send me news</label>
+            <input type="radio" name="news" id="reject" required ></li>
+        </ul>
+      </div>
+
+      <a class="next-step-anchor" href="/Users/hyf/Desktop/Hack Your Future/HTML and CSS/Week3/Homework week3/step3.html"><button name="next-step"  class="next-step-b">Next Step</button></a>
+ 
+    </form>
+  </main>

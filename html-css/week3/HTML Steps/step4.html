@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Your costum tailor</title>
+</head>
+<body>
+  <header>
+    <div class="const-header">
+        <img src="/Users/hyf/Desktop/images/jano logo.jpeg" alt="logo" class="logo-image">
+        <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+      
+    <form action="#">
+      <h1>Sign up to yourcustomtailor.com</h1>
+      <h2>Step 4/4  - Payment</h2>
+      <p>Progress </p>
+      <button class="done">  </button> 
+      <button class="done">  </button>
+      <button class="done">  </button>
+      <button class="done"> 100% </button>
+        <div class="payment">
+            <p>Please fill in your payment data</p>
+            <ul>
+                <li><label for="Name-on-card">Name on card</label>
+                    <input type="text" name="Name-on-card" id="Name-on-card" required></li>
+                <li><label for="card-type">Card type</label>
+                    <select name="card-type" id="card-type" required>
+                    <option value="Master Caerd">Master card</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Dankort">Dankort</option>
+                    </select></li>
+                <li> <label for="card-number">Credit card number</label>
+                    <input type="text" name="card-number" id="card-number" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" maxlength="16" minlength="16" required></li>
+                <li><label for="expiry-month">Expiry month</label>
+                    <input type="number" name="expiry-month" id="expiry-month" pattern="[0-1] [0-9]" max="12" min="1" required>
+                    <label for="expiry-year">Expiry year</label>
+                    <input type="number" name="expiry-year" id="expiry-year" pattern="2|0|2[1-9]" max="2029" min="2021" required></li>
+                <li><label for="ccv">CCV</label>
+                    <input type="number" name="ccv" id="ccv" min="100" max="999" required></li>
+
+            </ul>
+        </div>
+
+        <a class="next-step-anchor" href="#"><button name="next-step"  class="next-step-b">Submit</button></a>
+    </form>
+  </main>
