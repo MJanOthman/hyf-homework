@@ -1,0 +1,143 @@
+ body{
+    margin:0;
+    padding:0;
+    background-color: rgb(226, 226, 226);
+ }
+ header{
+   display: block;
+   padding: 0px;
+   width: 100%;
+   height: 10%;
+   background: rgb(5, 141, 175);
+ }
+
+ 
+ .const-header{
+     width: 80%;
+     margin-right: 10%;
+     margin-left: 10%; 
+     margin-bottom: 0px;
+     margin-top: 0px;
+     padding: 0px;
+ }
+ .logo-image {
+    margin: 0px;
+    padding: 0px;
+    height: 100px;;
+  }
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  nav a {
+    color: rgb(248, 246, 246);
+    text-decoration: none;
+  }
+
+  main{
+    padding: 2%;
+    padding-bottom: 100px;
+    width: 60%;
+    margin-left: 19%;
+    margin-right: 19%;
+    background-color: white;
+  }
+
+  button{
+    
+    width: 10%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .done{
+    background-color: rgb(44, 131, 44);
+  }
+  label,input {
+    margin: 10px;
+  }
+  label{
+    display: inline-block;
+  width: 100px;
+  text-align: right;
+  }
+  .profile-des{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .profile-des label, .profile-des textarea{
+    display: inline;
+    width: 40%;
+    justify-content: left;
+    margin: 5px;
+   
+  }
+  #post-code{
+    width: 70px;
+  }
+  #shipping-address:checked ~ .second-adress{
+    display: none;
+  }
+  .next-step-b {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(85, 233, 122);
+    border-color: rgb(85, 233, 122);
+    float: right;
+    margin-bottom: 50px;
+  }
+  .next-step-anchor{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact-info ul, .newsletter ul, .kinds ul, .styles-pics ul, .payment ul, .name-adress ul, .second-adress ul{
+    list-style: none;
+  }
+  
+  .newsletter li, .styles-pics li , .name-adress li, .contact-info li , .second-adress li{
+    display: inline-block;
+  }
+.kinds ul{
+  display:inline-grid;
+}
+.styles-pics input{
+  position: relative;
+  right: 80px;
+  top: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px){
+  h1{
+    text-align: center;
+  }
+  
+  main{
+    margin-left:4%;
+    margin-right:4%;
+    margin-top: 50px;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 2% 100px 2%;
+  }
+  .done{
+    width: 55px;
+  }
+}
+
+
