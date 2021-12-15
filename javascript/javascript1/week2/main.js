@@ -38,3 +38,19 @@ function with more possibilities.
 numbers more than 7, because our array has only 7 elements
 which are the weeks days.
 */
+
+function clothingito(temprature) {
+  if (temprature <= 0) {
+    return "Oh it is freezing, wear scarf, jacket, wool blouse";
+  } else if (temprature > 0 && temprature <= 12) {
+    return "wool blouse, jacket";
+  } else if (temprature > 12 && temprature <= 24) {
+    return "blouse, no jacket";
+  } else if (temprature > 24 && temprature <= 35) {
+    return "Tshirt, Short";
+  } else if (temprature > 35 && temprature < 50) {
+    return "wear a short and go to a beach";
+  } else {
+    return "Keep calm and take climate change more seriously";
+  }
+}
