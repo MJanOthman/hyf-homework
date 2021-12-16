@@ -54,3 +54,32 @@ function clothingito(temprature) {
     return "Keep calm and take climate change more seriously";
   }
 }
+
+let class07Students = [];
+function addStudentToClass(studentName) {
+  let s = true;
+  if (class07Students.length < 6) {
+    for (let i = 0; i < class07Students.length; i++) {
+      if (studentName === class07Students[i]) {
+        s = false;
+      }
+    }
+    if (s == true) {
+      class07Students.push(studentName);
+    } else if (s == false) {
+      let show = "Student " + studentName + " is  already in the class";
+      return show;
+    }
+  } else if (
+    class07Students.length < 7 &&
+    studentName == "Queen Margrethe II"
+  ) {
+    class07Students.push(studentName);
+  } else {
+    return "Cannot add more students to class 07";
+  }
+}
+
+function getNumberOfStudents(class07Students) {
+  return class07Students.length;
+}
