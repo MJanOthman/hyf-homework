@@ -80,6 +80,18 @@ function addStudentToClass(studentName) {
   }
 }
 
+function addStudentToClass(studentName) {
+if(
+    !class07Students.includes(studentName) // If the list DOESNT have the student already
+    && //AND
+    class07Students.length <= 6 // the number of students in the class is less or equal to 6
+    || //OR
+    studentName == "Dronning Margrethe" // if the student is actually the Queen
+){
+		class07Students.push(studentName); //Add the student to the class
+}else{
+console.log("The student can't be added.");
+}}
 function getNumberOfStudents(class07Students) {
   return class07Students.length;
 }
