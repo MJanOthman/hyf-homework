@@ -1,0 +1,56 @@
+<head>
+  <title>HyfBay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="hyfBay.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,800"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <form>
+    <label for="sort-name">Search by name:</label>
+    <input
+      type="text"
+      class="sort-by-name"
+      id="sort-name"
+      placeholder="Enter product name"
+    />
+    <label for="max-price">Maximum Price:</label>
+    <input
+      type="text"
+      class="max-by-price"
+      id="max-price"
+      placeholder="Max price"
+    />
+    <label for="min-rating">Minimum Rating:</label>
+    <input
+      type="text"
+      class="min-rating"
+      id="min-rating"
+      placeholder="Min rating"
+    />
+    <p>Sort products by price</p>
+     
+    <input type="radio" id="h2l" name="sorting-by-price" value="high-to-low" />
+      <label for="h2l">High to low</label><br />
+     
+    <input type="radio" id="l2h" name="sorting-by-price" value="low-to-high" />
+      <label for="l2h">Low to high</label><br />
+  </form>
+
+  <main><ul class="products-list"></ul></main>
+  <footer>Hack your Future &#10084;</footer>
+  <script src="hyfBayHelpers.js"></script>
+  <script src="hyfBayMain.js"></script>
+</body>
