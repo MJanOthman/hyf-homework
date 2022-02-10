@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgb(67, 5, 138) 0%,
+          rgb(125, 32, 153) 35%,
+          rgb(155, 142, 230) 100%
+        );
+        align-content: center;
+      }
+      h1 {
+        color: blanchedalmond;
+      }
+      h2,
+      p {
+        color: cornsilk;
+      }
+      .game-body {
+        display: flex;
+        flex-direction: row;
+      }
+      .l-part,
+      .s-part {
+        width: 40%;
+        padding: 10%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Best Clicker</h1>
+    <input type="number" class="game-timer" placeholder="Seconds" />
+    <button class="game-starter">Start The Game</button>
+    <br />
+    <button class="restart">Reset</button>
+    <br />
+    <p class="result-notification"></p>
+    <div class="game-body">
+      <div class="s-part">
+        <h2>S</h2>
+        <p class="s-counter"></p>
+      </div>
+
+      <div class="l-part">
+        <h2>L</h2>
+        <p class="l-counter"></p>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
