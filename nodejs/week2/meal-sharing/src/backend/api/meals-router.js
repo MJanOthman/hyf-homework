@@ -9,24 +9,53 @@ router.get("/", async (request, response) => {
   let limit = request.query.limit;
   let createdAfter = request.query.createdAfter;
   let title = request.query.title;
-  if (maxPrice) {
-    response.send(meals.filter((meal) => meal.price <= maxPrice));
-  } else if (limit) {
-    const limmitedMeals = [];
-    for (let i = 0; i < limit; i++) {
-      limmitedMeals.push(meals[i]);
+  let filtered = [];
+
+  //in the code below, you can enter more than onr query parameter
+  //and you will get the result
+  if (maxPrice || limit || createdAfter || title) {
+    if (maxPrice) {
+      if (filtered.length == 0) {
+        filtered = meals.filter((meal) => meal.price <= maxPrice);
+      } else {
+        filtered = filtered.filter((meal) => meal.price <= maxPrice);
+      }
     }
-    response.send(limmitedMeals);
-  } else if (createdAfter) {
-    response.send(
-      meals.filter((meal) => meal.createdAt.valueOf() > createdAfter.valueOf())
-    );
-  } else if (title) {
-    response.send(
-      meals.filter((meal) =>
-        meal.title.toLowerCase().includes(title.toLowerCase())
-      )
-    );
+    if (createdAfter) {
+      if (filtered.length == 0) {
+        filtered = meals.filter(
+          (meal) => meal.createdAt.valueOf() > createdAfter.valueOf()
+        );
+      } else {
+        filtered = filtered.filter(
+          (meal) => meal.createdAt.valueOf() > createdAfter.valueOf()
+        );
+      }
+    }
+    if (title) {
+      if (filtered.length == 0) {
+        filtered = meals.filter((meal) =>
+          meal.title.toLowerCase().includes(title.toLowerCase())
+        );
+      } else {
+        filtered = filtered.filter((meal) =>
+          meal.title.toLowerCase().includes(title.toLowerCase())
+        );
+      }
+    }
+    if (limit) {
+      if (filtered.length == 0) {
+        for (let i = 0; i < limit; i++) {
+          filtered.push(meals[i]);
+        }
+      } else {
+        let n = filtered.length - limit;
+        for (let i = 0; i < n; i++) {
+          filtered.pop();
+        }
+      }
+    }
+    response.send(filtered);
   } else {
     try {
       response.send(meals);
@@ -45,7 +74,7 @@ router.get("/:id", async (request, response) => {
     const mealsIdList = [];
     meals.forEach((meal) => mealsIdList.push(meal.id));
     if (mealsIdList.includes(parseInt(mealId))) {
-      response.json(meals.filter((meal) => meal.id == mealId));
+      response.send(meals.filter((meal) => meal.id == mealId));
     } else {
       response.send("There is no meal matches the id you entered");
     }
