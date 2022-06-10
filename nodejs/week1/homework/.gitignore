@@ -1,3 +1,4 @@
+
 # Logs
 *.log
 npm-debug.log*
@@ -43,4 +44,6 @@ dist/
 
 .DS_Store
 
-package-lock.json
+
+=======
+/node_modules
