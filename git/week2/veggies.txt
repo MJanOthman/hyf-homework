@@ -1,5 +1,7 @@
 Tomato
 Potato
-Onion
+Carrot
 Asparagus
 Chili
+Spinach
+Lattuce
